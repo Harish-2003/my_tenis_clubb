@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hello world</h1>
+<a href="/">HOME</a>
+
+{%csrf_token%}
+{%for x in mymembers%}
+<a href="data/{{x.id}}">{{x.id}} name -{{x.firstname}} lastname={{x.lastname}}</a><br>
+{%endfor%}
+</body>
+</html>
